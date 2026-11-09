@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      ARGUS_MODE: demo
+    volumes: ["inspection-results:/argus/outputs"]
+  dashboard:
+    build: .
+    command: python -m streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port 8501 --browser.gatherUsageStats false
+    ports: ["127.0.0.1:8501:8501"]
+    environment:
+      ARGUS_MODE: demo
+    volumes: ["inspection-results:/argus/outputs"]
+volumes:
+  inspection-results:
