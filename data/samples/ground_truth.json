@@ -1,0 +1,236 @@
+{
+  "detections": [
+    {
+      "detections": [
+        {
+          "class": "hole",
+          "confidence": 0.906,
+          "bbox": {
+            "x1": 56,
+            "y1": 115,
+            "x2": 111,
+            "y2": 136,
+            "width": 55,
+            "height": 21
+          },
+          "area_px": 1155,
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "class": "crack",
+          "confidence": 0.5957,
+          "bbox": {
+            "x1": 499,
+            "y1": 28,
+            "x2": 597,
+            "y2": 72,
+            "width": 98,
+            "height": 44
+          },
+          "area_px": 4312,
+          "severity": "MEDIUM"
+        },
+        {
+          "class": "delamination",
+          "confidence": 0.8449,
+          "bbox": {
+            "x1": 48,
+            "y1": 33,
+            "x2": 81,
+            "y2": 71,
+            "width": 33,
+            "height": 38
+          },
+          "area_px": 1254,
+          "severity": "HIGH"
+        }
+      ]
+    },
+    {
+      "detections": [
+        {
+          "class": "scratch",
+          "confidence": 0.7102,
+          "bbox": {
+            "x1": 278,
+            "y1": 160,
+            "x2": 355,
+            "y2": 235,
+            "width": 77,
+            "height": 75
+          },
+          "area_px": 5775,
+          "severity": "MEDIUM"
+        },
+        {
+          "class": "scratch",
+          "confidence": 0.5596,
+          "bbox": {
+            "x1": 121,
+            "y1": 149,
+            "x2": 158,
+            "y2": 207,
+            "width": 37,
+            "height": 58
+          },
+          "area_px": 2146,
+          "severity": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "detections": []
+    },
+    {
+      "detections": []
+    }
+  ],
+  "captions": [
+    "Industrial surface sample with 1 visible defect(s).",
+    "Industrial surface sample with 2 visible defect(s).",
+    "Industrial surface sample with 2 visible defect(s).",
+    "Industrial surface sample with 0 visible defect(s).",
+    "Industrial surface sample with 0 visible defect(s)."
+  ],
+  "reports": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "samples": [
+    {
+      "image_id": "SAMPLE-0000",
+      "file": "sample_0000.jpg",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "detections": [
+        {
+          "class": "hole",
+          "confidence": 0.906,
+          "bbox": {
+            "x1": 56,
+            "y1": 115,
+            "x2": 111,
+            "y2": 136,
+            "width": 55,
+            "height": 21
+          },
+          "area_px": 1155,
+          "severity": "HIGH"
+        }
+      ],
+      "num_defects": 1,
+      "caption": "Industrial surface sample with 1 visible defect(s)."
+    },
+    {
+      "image_id": "SAMPLE-0001",
+      "file": "sample_0001.jpg",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "detections": [
+        {
+          "class": "crack",
+          "confidence": 0.5957,
+          "bbox": {
+            "x1": 499,
+            "y1": 28,
+            "x2": 597,
+            "y2": 72,
+            "width": 98,
+            "height": 44
+          },
+          "area_px": 4312,
+          "severity": "MEDIUM"
+        },
+        {
+          "class": "delamination",
+          "confidence": 0.8449,
+          "bbox": {
+            "x1": 48,
+            "y1": 33,
+            "x2": 81,
+            "y2": 71,
+            "width": 33,
+            "height": 38
+          },
+          "area_px": 1254,
+          "severity": "HIGH"
+        }
+      ],
+      "num_defects": 2,
+      "caption": "Industrial surface sample with 2 visible defect(s)."
+    },
+    {
+      "image_id": "SAMPLE-0002",
+      "file": "sample_0002.jpg",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "detections": [
+        {
+          "class": "scratch",
+          "confidence": 0.7102,
+          "bbox": {
+            "x1": 278,
+            "y1": 160,
+            "x2": 355,
+            "y2": 235,
+            "width": 77,
+            "height": 75
+          },
+          "area_px": 5775,
+          "severity": "MEDIUM"
+        },
+        {
+          "class": "scratch",
+          "confidence": 0.5596,
+          "bbox": {
+            "x1": 121,
+            "y1": 149,
+            "x2": 158,
+            "y2": 207,
+            "width": 37,
+            "height": 58
+          },
+          "area_px": 2146,
+          "severity": "MEDIUM"
+        }
+      ],
+      "num_defects": 2,
+      "caption": "Industrial surface sample with 2 visible defect(s)."
+    },
+    {
+      "image_id": "SAMPLE-0003",
+      "file": "sample_0003.jpg",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "detections": [],
+      "num_defects": 0,
+      "caption": "Industrial surface sample with 0 visible defect(s)."
+    },
+    {
+      "image_id": "SAMPLE-0004",
+      "file": "sample_0004.jpg",
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "detections": [],
+      "num_defects": 0,
+      "caption": "Industrial surface sample with 0 visible defect(s)."
+    }
+  ]
+}

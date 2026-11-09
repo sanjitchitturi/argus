@@ -1,0 +1,7 @@
+.git
+.venv
+**/__pycache__
+outputs
+models
+mlflow_runs
+.env

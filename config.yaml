@@ -1,0 +1,81 @@
+# Argus Configuration
+# ──────────────────────────────────────────────────────────
+project:
+  name: Argus
+  version: "1.0.0"
+  description: Vision-Language Industrial Defect Inspection System
+
+# Detection
+detection:
+  model: yolov8n.pt          # yolov8n/s/m/l/x.pt or custom path
+  confidence: 0.35
+  iou_threshold: 0.45
+  device: cpu                # cpu | cuda | mps
+  imgsz: 640
+  classes:
+    - crack
+    - scratch
+    - dent
+    - corrosion
+    - hole
+    - delamination
+    - blister
+    - contamination
+    - missing_component
+    - misalignment
+
+# Vision-Language Model
+vlm:
+  model: blip2               # blip2 | llava | HF model ID
+  device: cpu
+  load_in_8bit: false
+  max_new_tokens: 150
+  default_questions:
+    - "What defect is visible in this image?"
+    - "Where is the defect located?"
+    - "How severe does the defect appear?"
+    - "What is the surface condition around the defect?"
+    - "Is there any discoloration or texture anomaly?"
+
+# Report Generator
+llm:
+  model: template            # template | mistral | llama | phi | HF model ID
+  device: cpu
+  max_new_tokens: 600
+  load_in_8bit: false
+  inspector_name: "Argus AI"
+
+# Evaluation
+evaluation:
+  iou_threshold: 0.5
+  rouge_types:
+    - rouge1
+    - rouge2
+    - rougeL
+
+# API
+api:
+  host: 0.0.0.0
+  port: 8000
+  reload: true
+
+# Streamlit
+streamlit:
+  port: 8501
+  theme: dark
+
+# MLflow
+mlflow:
+  tracking_uri: ./mlflow_runs
+  experiment_name: argus_inspections
+  enabled: false
+
+# Paths (relative to project root)
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  data_samples: data/samples
+  models_yolo: models/yolo
+  models_vlm: models/vlm
+  models_llm: models/llm
+  experiments: experiments

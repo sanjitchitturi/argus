@@ -1,0 +1,24 @@
+# Dataset configuration for Argus YOLOv8 fine-tuning
+# Place this file at data/defects.yaml and adjust paths accordingly.
+
+path: /argus/data          # Root of the dataset (absolute or relative to YOLO run dir)
+
+train: processed/images/train
+val:   processed/images/val
+test:  processed/images/test
+
+# Number of defect classes
+nc: 10
+
+# Class names (must match order used during labelling)
+names:
+  0: crack
+  1: scratch
+  2: dent
+  3: corrosion
+  4: hole
+  5: delamination
+  6: blister
+  7: contamination
+  8: missing_component
+  9: misalignment
