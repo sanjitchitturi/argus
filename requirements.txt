@@ -1,5 +1,5 @@
 numpy>=2,<3
-Pillow>=11,<14
+Pillow>=13.0.0,<14
 opencv-python-headless>=4.10,<6
 loguru>=0.7,<1
 PyYAML>=6,<7
